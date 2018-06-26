@@ -86,7 +86,7 @@ var sadArray = ["I'm sorry you're feeling sad. I'm here for you if you need anyt
 //   message.channel.send(sadArray[Math.floor(Math.random() * myArray.length)]);
 // }
 
-if (checkIfWords("sad") || checkIfWords("depression") || checkIfWords("depressed") || checkIfWords("upset") checkIfWords("feel down") || checkIfWords("feeling down")) {
+if (checkIfWords("sad") || checkIfWords("depression") || checkIfWords("depressed") || checkIfWords("upset") || checkIfWords("feel down") || checkIfWords("feeling down") || checkIfWords("under the weather")) {
     message.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
 }
 
