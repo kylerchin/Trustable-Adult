@@ -93,6 +93,10 @@ if (checkIfWords("sad") || checkIfWords("depression") || checkIfWords("depressed
 function suicideHotline() {
     message.channel.send("You're not alone. Confidential help is avaliable for free");
     message.channel.send({embed: {
+  color: 3447003,
+  description: "A very simple Embed!"
+}});
+    message.channel.send({embed: {
     color: 3447003,
     author: {
       name: "National Suicide Hotline",
