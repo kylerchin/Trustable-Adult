@@ -120,7 +120,7 @@ function suicideHotline() {
 }
 
 if (checkIfWords("kill myself") || checkIfWords("hurt someone") || checkIfWords("suicide")) {
-    message.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
+    suicideHotline();
 }
 
 checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y(^o^)Y");
