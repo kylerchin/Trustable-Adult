@@ -36,7 +36,7 @@ bot.on("message", async message => {
   //detect "fuck" || "shit" || "bitch"
 
   //use this function, checks if badWord is inside the system, if true, outputs stuffToSay
-  function checkIfBadWords(badWord,stuffToSay) {
+  function checkIfWords(badWord,stuffToSay) {
     if (command.toLowerCase().includes(badWord)) {
       //if command contains BadWord
       message.channel.send(stuffToSay);
@@ -73,28 +73,61 @@ bot.on("message", async message => {
   }
 
   //the ".toLowerCase()" check all instances of the word, regardless of capitalization
-checkIfBadWords("fuck","HEY!!! WHY DO YOU THINK THAT **LANGUAGE** IS **APPROPRIATE** ON **THIS** SERVER HUH???!!!");
-checkIfBadWords("shit",'**not cool**, you know better, buddy! Try, "Bowel Movement" instead.');
-checkIfBadWords("bitch","Did you mean: *a female dog, wolf, fox, or otter?*");
-checkIfBadWords("vape","#VapeNation!!! #GoGreen! https://www.youtube.com/watch?v=Dkm8Hteeh6M");
-//checkIfBadWords("penis","Hey, no good word! bad!");
-//checkIfBadWords("xxx","Hey, no good word! bad!");
+checkIfWords("fuck","HEY!!! WHY DO YOU THINK THAT **LANGUAGE** IS **APPROPRIATE** ON **THIS** SERVER HUH???!!!");
+checkIfWords("shit",'**not cool**, you know better, buddy! Try, "Bowel Movement" instead.');
+checkIfWords("bitch","Did you mean: *a female dog, wolf, fox, or otter?*");
+checkIfWords("vape","#VapeNation!!! #GoGreen! https://www.youtube.com/watch?v=Dkm8Hteeh6M");
+//checkIfWords("penis","Hey, no good word! bad!");
+//checkIfWords("xxx","Hey, no good word! bad!");
 
 //counseling seccession
 var sadArray = ["I'm sorry you're feeling sad. I'm here for you if you need anything.","If you want to talk, I'm a good listener!","Oh,no. It may not be much, but let me know if there is anything I can do for you.","I wish I had arms so I could give you a hug. But for now, maybe a joke or some music might help."]
-// if (checkIfBadWords("sad")) {
+// if (checkIfWords("sad")) {
 //   message.channel.send(sadArray[Math.floor(Math.random() * myArray.length)]);
 // }
 
-if (checkIfBadWords("sad") || checkIfBadWords("depression") || checkIfBadWords("depressed") ||  || checkIfBadWords("upset") checkIfBadWords("feel down") || checkIfBadWords("feeling down")) {
+if (checkIfWords("sad") || checkIfWords("depression") || checkIfWords("depressed") || checkIfWords("upset") checkIfWords("feel down") || checkIfWords("feeling down")) {
     message.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
 }
 
-checkIfBadWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y(^o^)Y");
+function suicideHotline() {
+    message.channel.send("You're not alone. Confidential help is avaliable for free");
+    message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: National Suicide Hotline,
+      icon_url: "https://static.logic0x.com/baseline-phone-24px.svg"
+    },
+    title: "National Suicide Hotline",
+    url: "www.suicidepreventionlifeline.org",
+    description: "",
+    fields: [{
+        name: "Need help? United States:",
+        value: "## 1 (800) 273-8255"
+      },
+      {
+        name: "Languages",
+        value: "English"
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© Example"
+    }
+  }
+});
+}
+
+if (checkIfWords("kill myself") || checkIfWords("hurt someone") || checkIfWords("suicide")) {
+    message.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
+}
+
+checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y(^o^)Y");
 
   //sorry i type that it is against my religion but it is right sorry
   //commands
-  if(checkIfBadWords("/ping")) {
+  if(checkIfWords("/ping")) {
     message.channel.send("Pong!");
     console.log("Pong!");
   }
@@ -147,7 +180,7 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
     message.channel.send(random_pickupline);
   }
 
-  if (checkIfBadWords("angry")
+  if (checkIfWords("angry")
 
 //our product is quality that you can trust
 //request quote from api
