@@ -120,7 +120,7 @@ checkIfBadWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8
   }
 
   if(command === "/github") {
-    message.channel.send("Here is the link to the Github Repo: https://github.com/weijingwang/Trustable-Adult");
+    message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/Trustable-Adult");
   }
 
   if(command === "/vn") {
