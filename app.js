@@ -151,6 +151,9 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
     message.channel.send("you wannna know huh huh? https://kawaiikitsunelover645.itch.io/sounds-of-the-night");
   }
 
+  if (checkIfWords("/invite")) {
+    message.channel.send("https://discordapp.com/oauth2/authorize?client_id=460663266541043712&permissions=8&scope=bot")
+  }
 
 //joke
 var pickuplines = [
