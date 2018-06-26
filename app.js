@@ -99,7 +99,7 @@ function suicideHotline() {
     name: "National Suicide Hotline 24/7",
     icon_url: "https://static.logic0x.com/baseline-phone-24px.svg"
   },
-  fields: [{
+  fields: [
       {
         name: "Need help? United States:",
         value: "## 1 (800) 273-8255"
