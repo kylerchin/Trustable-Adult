@@ -108,7 +108,7 @@ function suicideHotline() {
 }});
 }
 
-if (checkIfWords("kill myself") || checkIfWords("hurt someone") || checkIfWords("suicide")) {
+if (checkIfWords("kill myself") || checkIfWords("hurt someone") || checkIfWords("suicide")  || checkIfWords("killmyself") || checkIfWords("killme") || checkIfWords("don't want to live anymore") || checkIfWords("want to die now")) {
     suicideHotline();
 }
 
