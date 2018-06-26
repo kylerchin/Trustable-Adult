@@ -86,7 +86,9 @@ var sadArray = ["I'm sorry you're feeling sad. I'm here for you if you need anyt
 //   message.channel.send(sadArray[Math.floor(Math.random() * myArray.length)]);
 // }
 
-checkIfBadWords("sad",sadArray[Math.floor(Math.random() * sadArray.length)]);
+if (checkIfBadWords("sad") || checkIfBadWords("depression") || checkIfBadWords("depressed") ||  || checkIfBadWords("upset") checkIfBadWords("feel down") || checkIfBadWords("feeling down")) {
+    message.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
+}
 
 checkIfBadWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y(^o^)Y");
 
@@ -144,6 +146,8 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
   if(command === "/pickupline") {
     message.channel.send(random_pickupline);
   }
+
+  if (checkIfBadWords("angry")
 
 //our product is quality that you can trust
 //request quote from api
