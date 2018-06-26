@@ -109,12 +109,7 @@ function suicideHotline() {
         name: "Languages",
         value: "English"
       }
-    ],
-    timestamp: new Date(),
-    footer: {
-      icon_url: client.user.avatarURL,
-      text: "© Example"
-    }
+    ]
   }
 });
 }
