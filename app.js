@@ -96,43 +96,16 @@ function suicideHotline() {
   color: 3447003,
   description: "A very simple Embed!",
   author: {
-    name: "National Suicide Hotline",
+    name: "National Suicide Hotline 24/7",
     icon_url: "https://static.logic0x.com/baseline-phone-24px.svg"
   },
   fields: [{
-        name: "Fields",
-        value: "They can have different fields with small headlines."
-      },
       {
-        name: "Masked links",
-        value: "You can put [masked links](http://google.com) inside of rich embeds."
-      },
-      {
-        name: "Markdown",
-        value: "You can put all the *usual* **__Markdown__** inside of them."
+        name: "Need help? United States:",
+        value: "## 1 (800) 273-8255"
       }
     ],
 }});
-    message.channel.send({embed: {
-    color: 3447003,
-    author: {
-      name: "National Suicide Hotline",
-      icon_url: "https://static.logic0x.com/baseline-phone-24px.svg"
-    },
-    title: "National Suicide Hotline",
-    url: "www.suicidepreventionlifeline.org",
-    description: "",
-    fields: [{
-        name: "Need help? United States:",
-        value: "## 1 (800) 273-8255"
-      },
-      {
-        name: "Languages",
-        value: "English"
-      }
-    ]
-  }
-});
 }
 
 if (checkIfWords("kill myself") || checkIfWords("hurt someone") || checkIfWords("suicide")) {
