@@ -4,6 +4,10 @@ const bot = new Discord.Client();
 
 const config = require("./config.json");
 
+const swears = require('./modules/swears/swears.js');
+
+var unirest = require('unirest');
+
 const current_year = new Date().getFullYear();
 
 bot.on("ready", () => {
@@ -41,27 +45,62 @@ bot.on("message", async message => {
     }
   }
 
+
+  //check all msg against a bad kid list list
+  if (message.guild) {
+      //format txt into readable format
+      var string = message.content;
+      var word = string.split(" ");
+      var lower = string.toLowerCase();
+      //console.log(lower);
+      //console.log(string);
+      console.log(message.content);
+      //console.log(swears);
+      //loop 1000 times
+      for (i = 0; i < 2000; i++) {
+          //checks through all values in the list.
+          if (lower.indexOf(swears.list[i]) >= 0)
+          {
+            //If really bad word is true
+              console.log(i);
+              //remove message from channel
+              message.delete();
+              //fansy dancy msg
+              //message.channel.send("Hey! Your on santa's bad list now!");
+              break;
+          }
+      }
+  }
+
   //the ".toLowerCase()" check all instances of the word, regardless of capitalization
 checkIfBadWords("fuck","HEY!!! WHY DO YOU THINK THAT **LANGUAGE** IS **APPROPRIATE** ON **THIS** SERVER HUH???!!!");
 checkIfBadWords("shit",'**not cool**, you know better, buddy! Try, "Bowel Movement" instead.');
 checkIfBadWords("bitch","Did you mean: *a female dog, wolf, fox, or otter?*");
 checkIfBadWords("vape","#VapeNation!!! #GoGreen! https://www.youtube.com/watch?v=Dkm8Hteeh6M");
-checkIfBadWords("penis","Hey, no good word! bad!");
-checkIfBadWords("xxx","Hey, no good word! bad!");
+//checkIfBadWords("penis","Hey, no good word! bad!");
+//checkIfBadWords("xxx","Hey, no good word! bad!");
 
-#counseling seccession
+//counseling seccession
 var sadArray = ["I'm sorry you're feeling sad. I'm here for you if you need anything.","If you want to talk, I'm a good listener!","Oh,no. It may not be much, but let me know if there is anything I can do for you.","I wish I had arms so I could give you a hug. But for now, maybe a joke or some music might help."]
-if (checkIfBadWords("sad")) {
-  message.channel.send(sadArray[Math.floor(Math.random() * myArray.length)]);
-}
-  
+// if (checkIfBadWords("sad")) {
+//   message.channel.send(sadArray[Math.floor(Math.random() * myArray.length)]);
+// }
+
+checkIfBadWords("sad",sadArray[Math.floor(Math.random() * sadArray.length)]);
+
 checkIfBadWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y(^o^)Y");
 
   //sorry i type that it is against my religion but it is right sorry
   //commands
   if(checkIfBadWords("/ping")) {
     message.channel.send("Pong!");
+    console.log("Pong!");
   }
+
+  if(command === "<@459824205291192320>") {
+    message.channel.send("hi!")
+  }
+
 
   if(command === "/say") {
 
@@ -90,12 +129,17 @@ checkIfBadWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8
 
 
 //joke
-var pickuplines = ["Are you a sea lion? Because I can sea you lion in my bed tonight!",
-"I may not go down in history, but I'll go down on you.","Do you have an Asian passport? Because I'm China get into your Japantees",
-"Are you a farmer? Because you’ve got some big, round, beautiful melons!","My love for you is like diarrhea. I just can't hold it in.",
-"That’s a beautiful smile, but it’d look even better if it was all you were wearing.","If you’re feeling down, I can feel you up.",
+var pickuplines = ["I may not go down in history, but I'll go down on you.",
+"Do you have an Asian passport? Because I'm China get into your Japantees",
+"My love for you is like diarrhea. I just can't hold it in.",
+"That’s a beautiful smile, but it’d look even better if it was all you were wearing.",
+"If you’re feeling down, I can feel you up.",
 "I’m making a documentary on rare unique and exotic things on earth. Can we set up a lunch this afternoon to talk about you?",
-"I’m going outside to make out. Care to join me?","Pizza is my second favourite thing to eat in bed."];
+"Are you a pair of scissors? Because you look sharp ✂️",
+"Do you know CPR? Because I bet you take everyone's breath away",
+"You make my heart take flight✈️",
+"You know what's on the menu? Me-n-u 😘 ",
+"Are you a library book? Because I'm checking you out 📚"];
 
 var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.length)];
 
@@ -104,7 +148,26 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
     message.channel.send(random_pickupline);
   }
 
-
+//our product is quality that you can trust
+//request quote from api
+  if(command === "/quote") {
+    unirest.get("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous").header("X-Mashape-Key", "gY8GQOVzJbmsh0SGQNT0yJoV2MLEp1ssXFLjsnFY9xdzBsenNr").header("Accept", "application/json")
+    .end(function (result) {
+      console.log(result.status, result.headers, result.body);
+      message.channel.send(result.body[0]["quote"] + ' - ' + result.body[0]["author"]);
+      //nice and pretty quote
+      message.channel.send({embed: {color: 3447003,title: "Quote",
+      fields: [{
+          name: "Quote:",
+          value: result.body[0]["quote"]
+        },
+      ],
+      footer: {
+        text: result.body[0]["author"]
+      }
+    }
+  });
+    })}
 
 //help
   if(command === "/help") {
@@ -130,6 +193,10 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
         value: "say funny stuff (use of arrays)"
       },
       {
+        name: "/quote",
+        value: "get a quality quote!"
+      },
+      {
         name: "/info",
         value: "make me explain myself"
       },
@@ -140,6 +207,10 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
       {
         name: "/vn",
         value: "show suprise"
+      },
+      {
+        name: "sad",
+        value: "counseling session"
       }
     ],
     footer: {
