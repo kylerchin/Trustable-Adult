@@ -94,7 +94,24 @@ function suicideHotline() {
     message.channel.send("You're not alone. Confidential help is avaliable for free");
     message.channel.send({embed: {
   color: 3447003,
-  description: "A very simple Embed!"
+  description: "A very simple Embed!",
+  author: {
+    name: "National Suicide Hotline",
+    icon_url: "https://static.logic0x.com/baseline-phone-24px.svg"
+  },
+  fields: [{
+        name: "Fields",
+        value: "They can have different fields with small headlines."
+      },
+      {
+        name: "Masked links",
+        value: "You can put [masked links](http://google.com) inside of rich embeds."
+      },
+      {
+        name: "Markdown",
+        value: "You can put all the *usual* **__Markdown__** inside of them."
+      }
+    ],
 }});
     message.channel.send({embed: {
     color: 3447003,
