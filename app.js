@@ -95,7 +95,7 @@ function suicideHotline() {
     message.channel.send({embed: {
     color: 3447003,
     author: {
-      name: National Suicide Hotline,
+      name: "National Suicide Hotline",
       icon_url: "https://static.logic0x.com/baseline-phone-24px.svg"
     },
     title: "National Suicide Hotline",
