@@ -180,11 +180,9 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
     message.channel.send(random_pickupline);
   }
 
-  if (checkIfWords("angry")
-
 //our product is quality that you can trust
 //request quote from api
-  if(command === "/quote") {
+  if (command === "/quote") {
     unirest.get("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous").header("X-Mashape-Key", "gY8GQOVzJbmsh0SGQNT0yJoV2MLEp1ssXFLjsnFY9xdzBsenNr").header("Accept", "application/json")
     .end(function (result) {
       console.log(result.status, result.headers, result.body);
