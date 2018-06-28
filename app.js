@@ -187,7 +187,7 @@ var pickuplines = [
 var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.length)];
 
 
-  if(checkIfWords(pickupline) && robotName()) {
+  if(checkIfWords("pickupline") && robotName()) {
     message.channel.send(random_pickupline);
   }
 
