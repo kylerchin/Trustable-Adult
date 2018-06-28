@@ -112,7 +112,7 @@ if (checkIfWords("kill myself") || checkIfWords("hurt someone") || checkIfWords(
     suicideHotline();
 }
 
-# Fun strings on invalid queries
+// Fun strings on invalid queries
 invalidQueryStrings = ["Nobody knows.", "It's a mystery.", "I have no idea.", "No clue, sorry!", "I'm afraid I can't let you do that.", "Maybe another time.", "Ask someone else.", "That is anybody's guess.", "Beats me.", "I haven't the faintest idea."]
 
 checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y(^o^)Y");
