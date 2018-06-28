@@ -10,7 +10,7 @@ var unirest = require('unirest');
 
 const current_year = new Date().getFullYear();
 
-var botName = "<@460663266541043712>"
+var botName = "@460663266541043712"
 
 bot.on("ready", () => {
   console.log(`Botbot start with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds.`);
