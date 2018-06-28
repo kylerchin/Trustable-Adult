@@ -112,6 +112,9 @@ if (checkIfWords("kill myself") || checkIfWords("hurt someone") || checkIfWords(
     suicideHotline();
 }
 
+# Fun strings for invalid queries
+invalidQueryStrings = ["Nobody knows.", "It's a mystery.", "I have no idea.", "No clue, sorry!", "I'm afraid I can't let you do that.", "Maybe another time.", "Ask someone else.", "That is anybody's guess.", "Beats me.", "I haven't the faintest idea."]
+
 checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y(^o^)Y");
 
   //sorry i type that it is against my religion but it is right sorry
@@ -153,6 +156,10 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
 
   if (checkIfWords("/invite")) {
     message.channel.send("https://discordapp.com/oauth2/authorize?client_id=460663266541043712&permissions=8&scope=bot")
+  }
+
+  if (checkIfWords("/stockscreener")) {
+    message.channel.send("https://www.tradingview.com/screener/")
   }
 
 //joke
@@ -227,14 +234,6 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
       {
         name: "/github",
         value: "get github repo link"
-      },
-      {
-        name: "/vn",
-        value: "show suprise"
-      },
-      {
-        name: "sad",
-        value: "counseling session"
       }
     ],
     footer: {
