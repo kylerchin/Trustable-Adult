@@ -12,10 +12,6 @@ const current_year = new Date().getFullYear();
 
 var botName = "<@460663266541043712>"
 
-function robotName() {
-  return checkIfWords(botName)
-}
-
 bot.on("ready", () => {
   console.log(`Botbot start with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds.`);
   bot.user.setActivity(`do /help`);
@@ -51,6 +47,9 @@ bot.on("message", async message => {
     }
   }
 
+  function robotName() {
+    return checkIfWords(botName)
+  }
 
   //check all msg against a bad kid list list
   if (message.guild) {
