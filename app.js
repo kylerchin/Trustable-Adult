@@ -132,7 +132,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
 
   //sorry i type that it is against my religion but it is right sorry
   //commands
-  if(checkIfWords("/ping")) {
+  if(checkIfWords("ping") && checkIfWords(botName)) {
     message.channel.send("Pong!");
     console.log("Pong!");
   }
