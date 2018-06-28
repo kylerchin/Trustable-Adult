@@ -10,6 +10,12 @@ var unirest = require('unirest');
 
 const current_year = new Date().getFullYear();
 
+var botName = "<@460663266541043712>"
+
+function robotName() {
+  return checkIfWords(botName)
+}
+
 bot.on("ready", () => {
   console.log(`Botbot start with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds.`);
   bot.user.setActivity(`do /help`);
@@ -125,7 +131,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
   }
 
   if(command === "<@459824205291192320>") {
-    message.channel.send("hi!")
+    message.channel.send("Hi! How can I help?")
   }
 
 
@@ -136,7 +142,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
     message.channel.send(sayMessage);
   }
 
-  if(command === "/info") {
+  if(checkIfWords("info") && robotName()) {
     message.channel.send("ok so on June 22 2018, I made this bot\
       I saw a lot of bots but all of them didn't work for me and they made me\
       really mad. So I decided to make my own bot by glue coding since I\
@@ -146,29 +152,27 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
       thank kyler for some python syntax --> js help!");
   }
 
-  if(command === "/github") {
+  if(checkIfWords("github") && robotName()) {
     message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/Trustable-Adult");
   }
 
-  if (checkIfWords("/ticker"))
+  if (checkIfWords("/ticker")) {}
 
-  if(command === "/vn") {
-    message.channel.send("you wannna know huh huh? https://kawaiikitsunelover645.itch.io/sounds-of-the-night");
-  }
-
-  if (checkIfWords("/invite")) {
+  if (checkIfWords("invite") && robotName()) {
     message.channel.send("https://discordapp.com/oauth2/authorize?client_id=460663266541043712&permissions=8&scope=bot")
   }
 
-  if (checkIfWords("/stockscreener")) {
+  if (checkIfWords("stockscreener") && robotName()) {
     message.channel.send("https://www.tradingview.com/screener/")
   }
 
 
   var flipacoin = ["You got heads!","You got tails!"]
-  if (checkIfWords("Flip a coin") || checkIfWords("/flip")) {
+  if (((checkIfWords("Flip a coin") || checkIfWords("/flip")) && robotName()) {
     message.channel.send(flipacoin[Math.floor(Math.random() * flipacoin.length)])
   }
+
+  if (checkIfWords()) {}
 
 //joke
 var pickuplines = [
@@ -183,13 +187,13 @@ var pickuplines = [
 var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.length)];
 
 
-  if(command === "/pickupline") {
+  if(checkIfWords(pickupline) && robotName()) {
     message.channel.send(random_pickupline);
   }
 
 //our product is quality that you can trust
 //request quote from api
-  if (command === "/quote") {
+  if (checkIfWords("quote") && robotName()) {
     unirest.get("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous").header("X-Mashape-Key", "gY8GQOVzJbmsh0SGQNT0yJoV2MLEp1ssXFLjsnFY9xdzBsenNr").header("Accept", "application/json")
     .end(function (result) {
       console.log(result.status, result.headers, result.body);
@@ -209,7 +213,7 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
     })}
 
 //help
-  if(command === "/help") {
+  if(checkIfWords("help") && robotName()) {
 
     message.channel.send({embed: {
     color: 3447003,
