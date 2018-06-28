@@ -168,7 +168,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
 
 
   var flipacoin = ["You got heads!","You got tails!"]
-  if (((checkIfWords("Flip a coin") || checkIfWords("/flip")) && robotName()) {
+  if ((checkIfWords("Flip a coin") || checkIfWords("/flip")) && robotName()) {
     message.channel.send(flipacoin[Math.floor(Math.random() * flipacoin.length)])
   }
 
