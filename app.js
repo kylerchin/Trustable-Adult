@@ -48,17 +48,17 @@ bot.on("message", async message => {
   }
 
   function robotName() {
-    if (command.toLowerCase().includes(botName)) {
+    if (command.includes(botName)) {
       return true;
       console.log("got it!");
     }
   }
 
-  if (command.toLowerCase().includes(botName)) {
+  if (command.includes(botName)) {
     return true;
     console.log("got it!");
   }
-  
+
   //check all msg against a bad kid list list
   if (message.guild) {
       //format txt into readable format
