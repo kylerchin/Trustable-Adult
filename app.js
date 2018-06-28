@@ -54,6 +54,11 @@ bot.on("message", async message => {
     }
   }
 
+  if (command.toLowerCase().includes(botName)) {
+    return true;
+    console.log("got it!");
+  }
+  
   //check all msg against a bad kid list list
   if (message.guild) {
       //format txt into readable format
