@@ -48,7 +48,10 @@ bot.on("message", async message => {
   }
 
   function robotName() {
-    return checkIfWords(botName)
+    if (command.toLowerCase().includes(botName)) {
+      return true;
+      console.log("got it!");
+    }
   }
 
   //check all msg against a bad kid list list
