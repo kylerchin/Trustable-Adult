@@ -150,6 +150,8 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
     message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/Trustable-Adult");
   }
 
+  if (checkIfWords("/ticker"))
+
   if(command === "/vn") {
     message.channel.send("you wannna know huh huh? https://kawaiikitsunelover645.itch.io/sounds-of-the-night");
   }
@@ -161,6 +163,8 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
   if (checkIfWords("/stockscreener")) {
     message.channel.send("https://www.tradingview.com/screener/")
   }
+
+  if (checkIfWords("Flip a coin") || checkIfWords("/flip"))
 
 //joke
 var pickuplines = [
