@@ -164,7 +164,11 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
     message.channel.send("https://www.tradingview.com/screener/")
   }
 
-  if (checkIfWords("Flip a coin") || checkIfWords("/flip"))
+
+  var flipacoin ["You got heads!","You got tails!"]
+  if (checkIfWords("Flip a coin") || checkIfWords("/flip")) {
+    message.channel.send(flipacoin[Math.floor(Math.random() * flipacoin.length)])
+  }
 
 //joke
 var pickuplines = [
