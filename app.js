@@ -129,6 +129,10 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
       console.log("Pong! " + diff);
       message.channel.send("Pong! I heard you in" + diff + " seconds.");
     }
+
+    if(checkIfWords("github")) {
+      message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/Trustable-Adult");
+    }
   }
 
   if(command === "/info") {
