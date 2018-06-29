@@ -232,7 +232,7 @@ var pickuplines = [
       {
         name: "/github",
         value: "get github repo link"
-      }
+      },
       {
         name: "/invite",
         value: "invite more people to the party! :)"
