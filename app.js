@@ -119,7 +119,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
   //sorry i type that it is against my religion but it is right sorry
   //commands
 
-  if(checkIfWords("<@460663266541043712>")) {
+  if(checkIfWords("<@460663266541043712>") || checkIfWords("!Hyperion") || checkIfWords("!adult")  || checkIfWords("/")) {
     //if (command === "<@460663266541043712>") {
     //  message.channel.send("Hi! How can I help?");
 //  }
