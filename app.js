@@ -45,7 +45,6 @@ bot.on("message", async message => {
     }
   }
 
-
   //check all msg against a bad kid list list
   if (message.guild) {
       //format txt into readable format
@@ -121,7 +120,9 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
   //commands
 
   if(checkIfWords("<@460663266541043712>")) {
-    message.channel.send("Hi! How can I help?")
+    if (command === "<@460663266541043712>") {
+      message.channel.send("Hi! How can I help?");
+  }
 
     if(checkIfWords("ping")) {
       const diff = (Date.now() - msg.createdTimestamp) / 1000;
