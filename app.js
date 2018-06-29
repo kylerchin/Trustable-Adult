@@ -132,10 +132,10 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
 
   if(checkIfWords("<@462257314020327427>") || checkIfWords("!c") || checkIfWords("/c") || checkIfWords(".c")  || checkIfWords("#c") || checkIfWords("*c")  || checkIfWords("hey chloe")  || checkIfWords("chloe"))
   {
-  console.log("checking command ");
-    //if (command === "<@460663266541043712>") {
-    //  message.channel.send("Hi! How can I help?");
-//  }
+  console.log("checking command: " + message.content);
+    if (command === "<@460663266541043712>") {
+      message.channel.send("Hi! How can I help?");
+  }
 
     if(checkIfWords("ping")) {
       const diff = (Date.now() - msg.createdTimestamp) / 1000;
