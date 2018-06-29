@@ -157,7 +157,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
   }
 
   if (checkIfWords("/invite")) {
-    message.channel.send("https://discordapp.com/oauth2/authorize?client_id=460663266541043712&permissions=8&scope=bot")
+    message.channel.send("https://discordapp.com/api/oauth2/authorize?client_id=462257314020327427&scope=bot&permissions=0")
   }
 
   if (checkIfWords("/stockscreener")) {
@@ -220,14 +220,6 @@ var pickuplines = [
     fields: [{
         name: "/ping",
         value: "I say Pong!"
-      },
-      {
-        name: "/say",
-        value: "make me say something"
-      },
-      {
-        name: "/pickupline",
-        value: "say funny stuff (use of arrays)"
       },
       {
         name: "/quote",
