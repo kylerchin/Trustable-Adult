@@ -124,16 +124,8 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
     console.log("Pong!");
   }
 
-  if(command === "<@460663266541043712>") {
+  if(checkIfWords("<@460663266541043712>")) {
     message.channel.send("Hi! How can I help?")
-  }
-
-
-  if(command === "/say") {
-
-    const sayMessage = args.join(" ");
-    message.delete().catch(O_o=>{});
-    message.channel.send(sayMessage);
   }
 
   if(command === "/info") {
@@ -180,10 +172,8 @@ var pickuplines = [
 "Are you a library book? Because I'm checking you out 📚",
 "According to search results, the moon has less gravity than Earth, But I'd still fall for you there."];
 
-var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.length)];
-
-
   if(command === "/pickupline") {
+    var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.length)];
     message.channel.send(random_pickupline);
   }
 
@@ -213,7 +203,7 @@ var random_pickupline = pickuplines[Math.floor(Math.random() * pickuplines.lengt
 
     message.channel.send({embed: {
     color: 3447003,
-    description: "*I am a trustable adult and i help and i dont like bad boys/girls*/",
+    description: "*I am a trustable adult and I'm here to help you!",
     author: {
       name: bot.user.username + "'s",
       icon_url: bot.user.avatarURL
