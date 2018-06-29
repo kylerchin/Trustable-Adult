@@ -211,7 +211,7 @@ var pickuplines = [
 
     message.channel.send({embed: {
     color: 3447003,
-    description: "*I chloe and I'm here to help you!",
+    description: "*I Chloe and I'm here to help you!",
     author: {
       name: bot.user.username + "'s",
       icon_url: bot.user.avatarURL
