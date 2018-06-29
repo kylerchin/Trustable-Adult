@@ -126,7 +126,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
 
     if(checkIfWords("ping")) {
       const diff = (Date.now() - msg.createdTimestamp) / 1000;
-      message.channel.send("Pong! I heard you in" + diff + "s.");
+      message.channel.send("Pong! I heard you in" + diff + " seconds.");
       console.log("Pong! " + diff);
     }
   }
