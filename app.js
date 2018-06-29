@@ -155,7 +155,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
       message.channel.send("you wannna know huh huh? https://kawaiikitsunelover645.itch.io/sounds-of-the-night");
     }
 
-    if (checkIfWords("/stockscreener")) {
+    if (checkIfWords("stockscreener")) {
       message.channel.send("https://www.tradingview.com/screener/")
     }
 
