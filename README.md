@@ -9,10 +9,9 @@ To activate this bot, mention it or use !c or .c .
 
 Chloe is a Discord bot by Weijing Wang and Kyler Chin.
 
-Type ```/help``` in the chat to get help
+Type ```!c``` in the chat to get help
 
 Swearing is prohibited under this bot.
-Other cool stuff available when you type ```!chloe help```
 
 ## Instructions
 
