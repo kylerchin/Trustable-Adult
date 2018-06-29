@@ -54,7 +54,7 @@ bot.on("message", async message => {
       var lower = string.toLowerCase();
       //console.log(lower);
       //console.log(string);
-      console.log("Author: " + message.author "; Channel:" + message.channel + "; Message: " + message.content);
+      console.log("Author: " + message.author + "; Channel:" + message.channel + "; Message: " + message.content);
       //console.log(swears);
       //loop 1000 times
       for (i = 0; i < 2000; i++) {
