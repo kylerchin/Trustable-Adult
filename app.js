@@ -192,7 +192,8 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
 
   if (checkIfWords("!c")) {
     if(checkIfWords("github")) {
-      message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/chloe");
+      var githubMsg = "Here is the link to the Github Repo: https://github.com/kylerchin/chloe";
+      message.channel.send(githubMsg);
     }
   }
 
