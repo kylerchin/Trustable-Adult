@@ -119,14 +119,15 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
 
   //sorry i type that it is against my religion but it is right sorry
   //commands
-  if(checkIfWords("ping") && checkIfWords("<@460663266541043712>")) {
-    const diff = Date.now() - msg.createdTimestamp;
-    message.channel.send(prepare(`Pong! I heard you in ${diff / 1000}s.`));
-    console.log("Pong!");
-  }
 
   if(checkIfWords("<@460663266541043712>")) {
     message.channel.send("Hi! How can I help?")
+
+    if(checkIfWords("ping")) {
+      const diff = Date.now() - msg.createdTimestamp;
+      message.channel.send(prepare(`Pong! I heard you in ${diff / 1000}s.`));
+      console.log("Pong!");
+    }
   }
 
   if(command === "/info") {
