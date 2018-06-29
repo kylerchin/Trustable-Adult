@@ -119,7 +119,8 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
   //sorry i type that it is against my religion but it is right sorry
   //commands
 
-  if(checkIfWords("<@460663266541043712>") || checkIfWords("!Hyperion") || checkIfWords("!adult")  || checkIfWords("/")) {
+  if(checkIfWords("<@460663266541043712>") || checkIfWords("!chloe") || checkIfWords("/chloe") || checkIfWords(".chloe")) {
+  console.log("checking command ");
     //if (command === "<@460663266541043712>") {
     //  message.channel.send("Hi! How can I help?");
 //  }
@@ -131,7 +132,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
     }
 
     if(checkIfWords("github")) {
-      message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/Trustable-Adult");
+      message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/chloe");
     }
   }
 
@@ -146,7 +147,7 @@ checkIfWords("bonzibuddy","Y(^o^)Y https://www.youtube.com/watch?v=MiRaRy4Qq8g Y
   }
 
   if(command === "/github") {
-    message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/Trustable-Adult");
+    message.channel.send("Here is the link to the Github Repo: https://github.com/kylerchin/chloe");
   }
 
   if (checkIfWords("/ticker"))
@@ -210,7 +211,7 @@ var pickuplines = [
 
     message.channel.send({embed: {
     color: 3447003,
-    description: "*I am a trustable adult and I'm here to help you!",
+    description: "*I chloe and I'm here to help you!",
     author: {
       name: bot.user.username + "'s",
       icon_url: bot.user.avatarURL
