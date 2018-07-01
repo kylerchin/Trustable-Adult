@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const { login, discord, sequelize } = require('./client');
-const discordEvents = require('./discord');
+const discordEvents = require('discord.js');
 const ticker = require('./ticker');
 const jobs = require('./jobs');
 const servers = require('./servers');
