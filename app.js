@@ -1,11 +1,11 @@
 require('dotenv').config();
 
 const { login, discord, sequelize } = require('./client');
-const discordEvents = require('./src/discord');
-const ticker = require('./src/ticker');
-const jobs = require('./src/jobs');
-const servers = require('./src/servers');
-const models = require('./src/bags/models'); // Registers Models before initialising.
+const discordEvents = require('./discord');
+const ticker = require('./ticker');
+const jobs = require('./jobs');
+const servers = require('./servers');
+const models = require('./bags/models'); // Registers Models before initialising.
 
 console.log('Starting...');
 
