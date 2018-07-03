@@ -9,7 +9,7 @@ class Dice extends Command {
     constructor() {
         super({
             desc: 'Rolls a 6-sided dice.',
-            aliases: ['d'],
+            aliases: ['d','roll a dice','roll dice'],
         });
     }
 

@@ -9,7 +9,7 @@ class Flip extends Command {
     constructor() {
         super({
             desc: 'Flips a coin. That\'s all.',
-            aliases: ['f'],
+            aliases: ['f','flip a coin','flip coin'],
         });
     }
 
