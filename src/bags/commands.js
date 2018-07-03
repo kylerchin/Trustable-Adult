@@ -10,6 +10,7 @@ const dice = require('./../commands/utils/dice');
 const ping = require('./../commands/utils/ping');
 const info = require('./../commands/utils/info');
 const help = require('./../commands/utils/help');
+const quote = require('./../commands/utils/quote');
 const debug = require('./../commands/dev/debug');
 const eval = require('./../commands/dev/eval');
 
@@ -26,6 +27,7 @@ module.exports = {
     ping,
     info,
     help,
+    quote,
     debug,
     eval,
 };
