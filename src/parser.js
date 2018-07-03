@@ -59,6 +59,10 @@ module.exports = msg => {
           msg.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
         }
 
+        if (lower.includes('hello') && lower.includes('world')) {
+          msg.channel.send("Now you're speaking my language 😄");
+        }
+
       //console.log(lower);
       //console.log(string);
       //console.log(swears);
