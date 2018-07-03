@@ -3,6 +3,7 @@ const developers = require('./bags/developers');
 const { discord } = require('./client');
 const { prefix: getPrefix } = require('./servers');
 const { prepare } = require('./helpers');
+const swears = require('./../modules/swears/swears.js');
 
 // Initial stores for all Commands.
 const supported = Object.keys(commands);
@@ -29,7 +30,6 @@ aliasKeys = Object.keys(aliases);
  * @return {Boolean}
  */
 module.exports = msg => {
-
     // Fetch the Prefix used for this Server (May be custom).
     const isDm = msg.guild === null;
     const isMention = msg.isMentioned(discord.user);
@@ -42,8 +42,35 @@ module.exports = msg => {
         prefix = `${split[0]} `;
     }
 
-    // If the message doesn't start with the prefix then we don't care about it.
-    if (content.indexOf(prefix) !== 0) {
+    console.log("Author: " + msg.author + "; Channel:" + msg.channel + "; Message: " + msg.content);
+
+      //check all msg against a bad kid list list
+      if (msg.guild) {
+        //format txt into readable format
+        var string = msg.content;
+        var word = string.split(" ");
+        var lower = string.toLowerCase();
+      //console.log(lower);
+      //console.log(string);
+      //console.log(swears);
+      //loop 1000 times
+      for (i = 0; i < 2000; i++) {
+          //checks through all values in the list.
+          if (content.indexOf(swears.list[i]) >= 0)
+          {
+            //If really bad word is true
+              console.log(i);
+              //remove message from channel
+              msg.delete();
+              //fansy dancy msg
+              //msg.channel.send("Hey! Your on santa's bad list now!");
+              break;
+        }
+    }
+}
+
+// If the message doesn't start with the prefix then we don't care about it.
+if (content.indexOf(prefix) !== 0) {
         return false;
     }
 
