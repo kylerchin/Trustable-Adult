@@ -18,6 +18,7 @@
         "request": "^2.87.0",
         "sequelize": "^4.37.10",
         "sequelize-cli": "^4.0.0",
+        "unirest": "^0.5.1",
         "uws": "^10.148.0"
     }
 }
