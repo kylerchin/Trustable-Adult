@@ -28,7 +28,7 @@ class Info extends Command {
 **GitHub:** https://github.com/kylerchin/chloe
 **Our Server:** https://discord.gg/We9QexK
 
-Made by Kyler Chin https://kylerchin.com`));
+Made by Kyler Chin https://kylerchin.com at Logic0x LLC. https://logic0x.com`));
     }
 
 }
