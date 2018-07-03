@@ -1,5 +1,6 @@
 const Command = require('./../command');
 const { rand, prepare } = require('./../../helpers');
+var unirest = require('unirest');
 
 class Quote extends Command {
 
