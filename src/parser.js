@@ -29,10 +29,6 @@ aliasKeys = Object.keys(aliases);
  * @return {Boolean}
  */
 module.exports = msg => {
-    // Don't listen to other Bots -ever-.
-    if (msg.author.bot) {
-        return false;
-    }
 
     // Fetch the Prefix used for this Server (May be custom).
     const isDm = msg.guild === null;
