@@ -71,7 +71,7 @@ module.exports = msg => {
 
 // If the message doesn't start with the prefix then we don't care about it.
 if (content.indexOf(prefix) !== 0) {
-        return false;
+        //return false;
     }
 
     // Parse the message content in to command and parameters.
