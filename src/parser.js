@@ -29,6 +29,19 @@ aliasKeys = Object.keys(aliases);
  *
  * @return {Boolean}
  */
+
+ //use this function, checks if badWord is inside the system, if true, outputs stuffToSay
+function checkIfWords(badWord,stuffToSay) {
+ if (msg.content.toLowerCase().includes(badWord)) {
+   //if command contains BadWord
+   if (stuffToSay.length > 0) {
+     msg.channel.send(stuffToSay);
+     //send message to the channel stuffToSay
+   }
+   return true;
+ }
+}
+
 module.exports = msg => {
     // Fetch the Prefix used for this Server (May be custom).
     const isDm = msg.guild === null;
@@ -41,19 +54,6 @@ module.exports = msg => {
         const split = content.split(' ');
         prefix = `${split[0]} `;
     }
-
-    //use this function, checks if badWord is inside the system, if true, outputs stuffToSay
-  function checkIfWords(badWord,stuffToSay) {
-    if (msg.content.toLowerCase().includes(badWord)) {
-      //if command contains BadWord
-      if (stuffToSay.length > 0) {
-        msg.channel.send(stuffToSay);
-        //send message to the channel stuffToSay
-      }
-      return true;
-    }
-  }
-
 
     console.log("Author: " + msg.author + "; Channel:" + msg.channel + "; Message: " + msg.content);
 
