@@ -30,18 +30,6 @@ aliasKeys = Object.keys(aliases);
  * @return {Boolean}
  */
 
- //use this function, checks if badWord is inside the system, if true, outputs stuffToSay
-function checkIfWords(badWord,stuffToSay) {
- if (msg.content.toLowerCase().includes(badWord)) {
-   //if command contains BadWord
-   if (stuffToSay.length > 0) {
-     msg.channel.send(stuffToSay);
-     //send message to the channel stuffToSay
-   }
-   return true;
- }
-}
-
 module.exports = msg => {
     // Fetch the Prefix used for this Server (May be custom).
     const isDm = msg.guild === null;
@@ -67,7 +55,7 @@ module.exports = msg => {
         //check for sadness
         var sadArray = ["I'm sorry you're feeling sad. I'm here for you if you need anything.","If you want to talk, I'm a good listener!","Oh,no. It may not be much, but let me know if there is anything I can do for you.","I wish I had arms so I could give you a hug. But for now, maybe a joke or some music might help."]
 
-        if (checkIfWords("sad") || checkIfWords("depression") || checkIfWords("depressed") || checkIfWords("upset") || checkIfWords("feel down") || checkIfWords("feeling down") || checkIfWords("under the weather")) {
+        if (lower.includes('sad') || lower.includes("depression") || lower.includes("depressed") || lower.includes("upset") || lower.includes("feel down") || lower.includes("feeling down") || lower.includes("under the weather")) {
           msg.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
         }
 
