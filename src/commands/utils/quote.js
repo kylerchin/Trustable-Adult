@@ -42,6 +42,4 @@ class Quote extends Command {
         })}
     }
 
-}
-
 module.exports = new Quote();
