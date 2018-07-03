@@ -24,8 +24,7 @@ class Quote extends Command {
 
         const { msg } = config;
 
-        unirest.get("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous").header("X-Mashape-Key", "gY8GQOVzJbmsh0SGQNT0yJoV2MLEp1ssXFLjsnFY9xdzBsenNr").header("Accept", "application/json")
-        .end(function (result) {
+        unirest.get("https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous").header("X-Mashape-Key", "gY8GQOVzJbmsh0SGQNT0yJoV2MLEp1ssXFLjsnFY9xdzBsenNr").header("Accept", "application/json").end(function (result) {
           console.log(result.status, result.headers, result.body);
           msg.channel.send(result.body[0]["quote"] + ' - ' + result.body[0]["author"]);
           //nice and pretty quote
