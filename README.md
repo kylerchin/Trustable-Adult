@@ -5,13 +5,15 @@ Chloe Discord Bot
 
 A multipurpose helpful bot with human interaction, top news, quotes, stock / crypto prices and charts, polls.
 
-To activate this bot, mention it or use !c or .c .
+To activate this bot, mention it or use !c .
 
 Chloe is a Discord bot by Weijing Wang and Kyler Chin.
 
-Type ```!c help``` in the chat to get help
+Type ```!c help``` in the chat to get help.
 
 Swearing is prohibited under this bot.
+
+There are also chat features within the bot, like a regular ai assistant! 😄
 
 ## Commands
 
