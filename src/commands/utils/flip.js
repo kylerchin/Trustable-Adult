@@ -23,10 +23,10 @@ class Flip extends Command {
 
         const { msg } = config;
 
-        let text = 'Heads';
+        let text = 'You got heads!';
 
         if (rand(0, 1) === 1) {
-            text = 'Tails';
+            text = 'You got tails!';
         }
 
         msg.channel.send(prepare(text));
