@@ -1,6 +1,4 @@
 exports.list=[
-    "fortnite",
-    "f o r t n i t e",
     "4r5e",
 "5h1t",
 "5hit",
