@@ -23,7 +23,7 @@ class Dice extends Command {
 
         const { msg } = config;
 
-        msg.channel.send(prepare(rand(1, 6)));
+        msg.channel.send(prepare("You got a " + rand(1, 6)));
     }
 
 }
