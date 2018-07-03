@@ -10,7 +10,7 @@ class Quote extends Command {
     constructor() {
         super({
             desc: 'Output a random quote!',
-            aliases: ['quote','give me a random quote','give me a quote','can I have a quote?','can I have a quote'],
+            aliases: ['q'],
         });
     }
 
