@@ -1,7 +1,7 @@
 # Chloe Discord Bot
 Chloe Discord Bot
 
-[![Discord Bots](https://discordbots.org/api/widget/460663266541043712.svg)](https://discordbots.org/bot/460663266541043712)
+[![Discord Bots](https://discordbots.org/api/widget/462257314020327427.svg)](https://discordbots.org/bot/462257314020327427)
 
 A multipurpose helpful bot with human interaction, top news, quotes, stock / crypto prices and charts, polls.
 
