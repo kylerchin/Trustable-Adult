@@ -1,5 +1,5 @@
 #!/bin/bash
-for (( ; ; ))
+while true
 do
    npm start
 done
