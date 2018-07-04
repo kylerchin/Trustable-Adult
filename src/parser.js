@@ -57,10 +57,12 @@ module.exports = msg => {
 
         if (lower.includes('sad') || lower.includes("depression") || lower.includes("depressed") || lower.includes("upset") || lower.includes("feel down") || lower.includes("feeling down") || lower.includes("under the weather")) {
           msg.channel.send(sadArray[Math.floor(Math.random() * sadArray.length)]);
+          return true;
         }
 
         if (lower.includes('hello') && lower.includes('world')) {
           msg.channel.send("Now you're speaking my language 😄");
+          return true;
         }
 
       //console.log(lower);
@@ -84,7 +86,7 @@ module.exports = msg => {
 
 // If the message doesn't start with the prefix then we don't care about it.
 if (content.indexOf(prefix) !== 0) {
-        //return false;
+        return false;
     }
 
     // Parse the message content in to command and parameters.
