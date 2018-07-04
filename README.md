@@ -17,16 +17,16 @@ There are also chat features within the bot, like a regular ai assistant! 😄
 
 ## Commands
 
-Commands must be prefixed with `!Chloe`. See below for examples.
+Commands must be prefixed with `!c` or @chloe. See below for examples.
 
 ### `price`
 
 Use the `price` command to fetch stats from CoinMarketCap.
 
 ```
-!Chloe price btc
-!Chloe price stellar
-!Chloe price nano
+!c price btc
+!c price stellar
+!c price nano
 ```
 
 ### `convert`
@@ -34,8 +34,8 @@ Use the `price` command to fetch stats from CoinMarketCap.
 Converts `to` in to `from`.
 
 ```
-!Chloe convert 10 btc nano
-!Chloe convert 10 ada eth
+!c convert 10 btc nano
+!c convert 10 ada eth
 ```
 
 ### `balance`
@@ -47,8 +47,8 @@ Returns the balance of the given Wallet. Currently supported currencies:
 - `tokens` (Returns all ERC-20 Tokens)
 
 ```
-!Chloe balance btc 15urYnyeJe3gwbGJ74wcX89Tz7ZtsFDVew
-!Chloe balance tokens 0x57d90b64a1a57749b0f932f1a3395792e12e7055
+!c balance btc 15urYnyeJe3gwbGJ74wcX89Tz7ZtsFDVew
+!c balance tokens 0x57d90b64a1a57749b0f932f1a3395792e12e7055
 ```
 
 ### `top`
@@ -60,8 +60,8 @@ Returns the top `gainers`/`losers` for the given period. Valid periods:
 - `7d`
 
 ```
-!Chloe top gainers 1h
-!Chloe top losers 7d
+!c top gainers 1h
+!c top losers 7d
 ```
 
 ### `poll`
@@ -71,13 +71,13 @@ Creates a new Poll for people to vote on. Has very configurable options.
 Specifying a Poll that has no options will add the 👍 and 👎 reactions for people to use:
 
 ```
-!Chloe poll Is the sky blue?
+!c poll Is the sky blue?
 ```
 
 You can specify up to 10 options on new lines:
 
 ```
-!Chloe poll Which is your favourite animal?
+!c poll Which is your favourite animal?
 Dog
 Cat
 Mouse
@@ -86,7 +86,7 @@ Mouse
 The above will give each option a letter of the alphabet, e.g. `A`, `B` and `C`, for the reactions. If you want to specify your own emojis for each option, you can do so:
 
 ```
-!Chloe poll Which is your favourite animal?
+!c poll Which is your favourite animal?
 🐶) Dog
 🐱) Cat
 🐭) Mouse
@@ -95,7 +95,7 @@ The above will give each option a letter of the alphabet, e.g. `A`, `B` and `C`,
 You can also negate the text altogether and use just emojis:
 
 ```
-!Chloe poll Which is your favourite animal?
+!c poll Which is your favourite animal?
 🐶
 🐱
 🐭
@@ -104,7 +104,7 @@ You can also negate the text altogether and use just emojis:
 It is also possible to mix-and-max these options:
 
 ```
-!Chloe poll Which is your favourite animal?
+!c poll Which is your favourite animal?
 Dog
 🐱) Cat
 🐭
@@ -121,15 +121,15 @@ Changes the Bot Prefix for this Server.
 For example, using the following:
 
 ```
-!Chloe prefix .
+!c prefix .
 ```
 
-Would mean that instead of `!Chloe price btc` you would use `.price btc`.
+Would mean that instead of `!c price btc` you would use `.price btc`.
 
-If you want to end your prefix with a blank space (Such as the default `!Chloe ` prefix), replace the space with `[space]`. E.g.:
+If you want to end your prefix with a blank space (Such as the default `!c ` prefix), replace the space with `[space]`. E.g.:
 
 ```
-!Chloe prefix !Chloe[space]
+!c prefix !c[space]
 ```
 
 ### `stats`
@@ -137,7 +137,7 @@ If you want to end your prefix with a blank space (Such as the default `!Chloe `
 Print out statistical information about the current Server.
 
 ```
-!Chloe stats
+!c stats
 ```
 
 ### `flip`
@@ -145,7 +145,15 @@ Print out statistical information about the current Server.
 Flips a coin. That's all.
 
 ```
-!Chloe flip
+!c flip
+```
+
+### `quote`
+
+Output a random quote and it's author!
+
+```
+!c quote
 ```
 
 ### `dice`
@@ -153,7 +161,7 @@ Flips a coin. That's all.
 Rolls a 6-sided dice.
 
 ```
-!Chloe dice
+!c dice
 ```
 
 ### `ping`
@@ -161,7 +169,7 @@ Rolls a 6-sided dice.
 Returns the latency between Discord and the Bot.
 
 ```
-!Chloe ping
+!c ping
 ```
 
 ### `info`
@@ -169,7 +177,7 @@ Returns the latency between Discord and the Bot.
 Prints out Info text for the Bot. E.g.
 
 ```
-!Chloe info
+!c info
 ```
 
 ### `help`
@@ -177,8 +185,8 @@ Prints out Info text for the Bot. E.g.
 Prints out Usage text for the Chloe. E.g.
 
 ```
-!Chloe help
-!Chloe help price
+!c help
+!c help price
 ```
 
 ## Development
@@ -188,9 +196,9 @@ Prints out Usage text for the Chloe. E.g.
 - PostgreSQL
 - NodeJS (8+)
 
-### Environment Variables
+### Instructions
 
-## Instructions
+### Environment Variables
 
 Dependencies: NodeJS LTS or better, NPM
 
