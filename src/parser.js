@@ -71,8 +71,8 @@ module.exports = msg => {
         }
 
         function suicideContact() {
-    message.author.send("You're not alone. Confidential help is avaliable for free");
-    message.author.send({embed: {
+    msg.author.send("You're not alone. Confidential help is avaliable for free");
+    msg.author.send({embed: {
   color: 3447003,
   description: "National Suicide Hotline",
   author: {
