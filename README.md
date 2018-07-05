@@ -237,3 +237,10 @@ npm run seed
 ```
 
 **ENJOY!!! :)**
+
+## WE LIVE HERE:
+# Impressiv Group Discord Server!
+
+We have live trading floors and intelligence from 24/7 global markets. We share insight on trading strategy, stocks, cryptocurrency trading, Options, ETFs, Futures, commodities, Forex, Bonds, and Fixed income. We talk about the latest in buisness and technology, headlines and technical analysis from the smartest voices in the industry. We also discuss programming in our coding language channels, everything from game development, databases, python, js, Blockchain development, Dapps, etc. This server has a LOT OF BOTS, a place that people can build and test their own bots.
+https://discord.gg/We9QexK
+https://discordbots.org/servers/463565906711281694
