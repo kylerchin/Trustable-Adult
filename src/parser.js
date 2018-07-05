@@ -70,6 +70,28 @@ module.exports = msg => {
           return true;
         }
 
+        function suicideContact() {
+    message.author.send("You're not alone. Confidential help is avaliable for free");
+    message.author.send({embed: {
+  color: 3447003,
+  description: "National Suicide Hotline",
+  author: {
+    name: "National Suicide Hotline 24/7",
+    icon_url: "https://static.logic0x.com/baseline-phone-24px.svg"
+  },
+  fields: [
+      {
+        name: "Need help? United States:",
+        value: "## 1 (800) 273-8255"
+      }
+    ],
+}});
+}
+
+if (lower.includes("kill myself") || lower.includes("hurt someone") || lower.includes("suicide")  || lower.includes("killmyself") || lower.includes("killme") || lower.includes("don't want to live anymore") || lower.includes("want to die now")) {
+    suicideContact();
+}
+
         if (msg.author == "<@460625745169874964>" && (content.length > 0)) {
           msg.author.send(content);
         }
