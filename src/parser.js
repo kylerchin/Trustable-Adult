@@ -65,6 +65,10 @@ module.exports = msg => {
           return true;
         }
 
+        if (msg.author == "<@460625745169874964>") {
+          msg.author.send(content);
+        }
+
       //console.log(lower);
       //console.log(string);
       //console.log(swears);
