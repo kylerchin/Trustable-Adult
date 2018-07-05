@@ -57,7 +57,23 @@ class Stats extends Command {
                             name: 'Total Commands',
                             value: instance.value,
                             inline: true,
-                        });
+                        },
+                        {
+                            name: 'Total Servers Serving',
+                            value: bot.servers.length,
+                            inline: true,
+                        },
+                        {
+                            name: 'Total Users Serving',
+                            value: bot.users.length,
+                            inline: true,
+                        },
+                        {
+                            name: 'Total Channels Serving',
+                            value: bot.channels.length,
+                            inline: true,
+                        }
+                      );
                         break;
                     }
                 }
