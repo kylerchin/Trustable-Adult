@@ -6,4 +6,5 @@ exports.list = [
   "You know what's on the menu? Me-n-u 😘 ",
   "Are you a library book? Because I'm checking you out 📚",
   "According to search results, the moon has less gravity than Earth, But I'd still fall for you there.",
-  "Omlette you in on a secret - life is feta when we're together"];
+  "Omlette you in on a secret - life is feta when we're together",
+  "If I could rearrange the alphabet, I'd put U and I together"];

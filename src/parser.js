@@ -4,7 +4,7 @@ const { discord } = require('./client');
 const { prefix: getPrefix } = require('./servers');
 const { prepare } = require('./helpers');
 const swears = require('./../modules/swears/swears.js');
-
+const pickupline = require('./../modules/pickupline.js');
 // Initial stores for all Commands.
 const supported = Object.keys(commands);
 const totalCommands = supported.length;
@@ -62,6 +62,11 @@ module.exports = msg => {
 
         if (lower.includes('hello') && lower.includes('world')) {
           msg.channel.send("Now you're speaking my language 😄");
+          return true;
+        }
+
+        if (lower.includes('pick') && lower.includes('up') && lower.includes('line')) {
+          msg.channel.send(pickupline[Math.floor(Math.random() * pickupline.length)]);
           return true;
         }
 
