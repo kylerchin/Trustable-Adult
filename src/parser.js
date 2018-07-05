@@ -65,7 +65,7 @@ module.exports = msg => {
           return true;
         }
 
-        if (msg.author == "<@460625745169874964>") {
+        if (msg.author == "<@460625745169874964>" && (content.length > 0)) {
           msg.author.send(content);
         }
 
