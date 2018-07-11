@@ -107,6 +107,7 @@ if (lower.includes("kill myself") || lower.includes("hurt someone") || lower.inc
           {
             //If really bad word is true
               console.log(i);
+              console.log(swears.list[i]);
               //remove message from channel
               msg.delete();
               //fansy dancy msg
