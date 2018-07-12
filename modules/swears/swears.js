@@ -557,7 +557,7 @@ exports.list=[
 "anus",
 "apeshit",
 "arsehole",
-"ass",
+" ass "
 "asshole",
 "assmunch",
 "auto erotic",
