@@ -1,6 +1,6 @@
 //http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true
 
-const Command = require('./../command');
+const Command = require('./../../command');
 const { rand, prepare } = require('./../../helpers');
 var request = require("request");
 
