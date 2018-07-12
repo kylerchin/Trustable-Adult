@@ -13,6 +13,7 @@ const help = require('./../commands/utils/help');
 const quote = require('./../commands/utils/quote');
 const debug = require('./../commands/dev/debug');
 const eval = require('./../commands/dev/eval');
+const shibe = require('./../commands/utils/randImg/shibe');
 
 module.exports = {
     price,
@@ -30,4 +31,5 @@ module.exports = {
     quote,
     debug,
     eval,
+    shibe
 };
