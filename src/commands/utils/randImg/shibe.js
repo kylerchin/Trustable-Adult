@@ -42,7 +42,6 @@ class Shibe extends Command {
             }
           });
           });
-        });
 
 }
     }
