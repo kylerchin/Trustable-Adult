@@ -12,6 +12,8 @@
         "discord": "^0.8.2",
         "discord.js": "^11.3.2",
         "dotenv": "^4.0.0",
+        "iex-api": "0.0.3",
+        "isomorphic-fetch": "^2.2.1",
         "performance-now": "^2.1.0",
         "pg": "^7.4.3",
         "pg-hstore": "^2.3.2",
