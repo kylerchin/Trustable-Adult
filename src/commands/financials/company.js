@@ -1,4 +1,4 @@
-  import IEXClient from 'iex-api'
+  import { IEXClient } from 'iex-api'
   import * as _fetch from 'isomorphic-fetch';
 
   const Command = require('./../command');
