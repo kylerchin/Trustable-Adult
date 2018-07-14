@@ -1,6 +1,3 @@
-  import { IEXClient } from 'iex-api'
-  import * as _fetch from 'isomorphic-fetch';
-
   const Command = require('./../command');
   const { rand, prepare } = require('./../../helpers');
 
@@ -26,23 +23,26 @@
 
           const { msg } = config;
 
-          msg.channel.send(prepare(text));
+          const request = require('request');
 
-          const iex = new IEXClient(_fetch)
-          iex.stockCompany('AAPL').then(company => console.log(company))
+          request('https://api.iextrading.com/1.0/stock/aapl/company', { json: true }, (err, res, body) => {
+            if (err) { return console.log(err); }
+            console.log(body.url);
+            console.log(body.explanation);
+          });
 
           msg.channel.send({embed: {color: 3447003,title: "Company",
           fields: [{
               name: "Symbol",
-              value: company.symbol
+              value: body.symbol
             },
             {
                 name: "companyName",
-                value: company.companyName
+                value: body.companyName
             },
             {
                 name: "Exchange",
-                value: company.exchange
+                value: body.exchange
             },
           ],
           footer: {
@@ -55,4 +55,4 @@
 
   }
 
-  module.exports = new Flip();
+  module.exports = new Company();
