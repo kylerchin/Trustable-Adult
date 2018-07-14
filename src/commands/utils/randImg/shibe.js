@@ -12,7 +12,7 @@ class Shibe extends Command {
     constructor() {
         super({
             desc: 'Output a random shibe!',
-            aliases: [''],
+            aliases: ['shibe'],
         });
     }
 
@@ -30,17 +30,6 @@ class Shibe extends Command {
             function(error, response, body) {
               console.log(response);
               console.log(body);
-              msg.channel.send({embed: {color: 3447003,title: "Shibe",
-              fields: [{
-                  name: "Here is a random Shibe!",
-                  value: body[0]
-                },
-              ],
-              footer: {
-                text: "Powered by https://shibe.online/"
-              }
-            }
-          });
           });
 
 }
