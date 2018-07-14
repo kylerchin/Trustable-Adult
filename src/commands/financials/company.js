@@ -1,7 +1,7 @@
   const Command = require('./../command');
   const { rand, prepare } = require('./../../helpers');
 
-  class Flip extends Command {
+  class Company extends Command {
 
       /**
        * Initializes the new Command Instance.
