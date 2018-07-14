@@ -1,5 +1,6 @@
   const Command = require('./../command');
   const { rand, prepare } = require('./../../helpers');
+  const request = require('request');
 
   class Company extends Command {
 

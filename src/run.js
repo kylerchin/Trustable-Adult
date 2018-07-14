@@ -7,7 +7,7 @@ const jobs = require('./jobs');
 const servers = require('./servers');
 const models = require('./bags/models'); // Registers Models before initialising.
 var unirest = require('unirest');
-var request = require("request");
+const request = require('request');
 
 console.log('Starting...');
 
