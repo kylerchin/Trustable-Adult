@@ -14,7 +14,7 @@ const quote = require('./../commands/utils/quote');
 const debug = require('./../commands/dev/debug');
 const eval = require('./../commands/dev/eval');
 const shibe = require('./../commands/utils/randImg/shibe');
-const company = require('./../commands/financials/company.js');
+const gain = require('./../commands/financials/gainers.js');
 
 module.exports = {
     price,
@@ -33,5 +33,5 @@ module.exports = {
     debug,
     eval,
     shibe,
-    company
+    gain
 };

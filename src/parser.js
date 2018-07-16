@@ -88,7 +88,7 @@ module.exports = msg => {
 }});
 }
 
-if (lower.includes("kill myself") || lower.includes("hurt someone") || lower.includes("suicide")  || lower.includes("killmyself") || lower.includes("killme") || lower.includes("don't want to live anymore") || lower.includes("want to die now")) {
+if (lower.includes("kill myself") || lower.includes("hurt someone") || lower.includes("suicide") || lower.includes("killmyself") || lower.includes("killme") || lower.includes("don't want to live anymore") || lower.includes("want to die now")) {
   console.log("test 0x12")
     suicideContact();
 }
