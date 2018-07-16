@@ -16,7 +16,7 @@ class Help extends Command {
                     default: null,
                 },
             },
-            aliases: ['h'],
+            aliases: ['help'],
         });
     }
 
