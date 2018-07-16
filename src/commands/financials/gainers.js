@@ -37,7 +37,7 @@
             console.log(body.url);
             console.log(body.explanation);
 
-            msg.channel.send({embed: {color: 0x19be87,title: "US Equity Gainers",
+            msg.channel.send({embed: {color: 1687175,title: "US Equity Gainers",
             fields: [{
                 name: body[0].symbol,
                 value: getValue(0)
