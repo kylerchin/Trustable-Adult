@@ -15,6 +15,7 @@ const debug = require('./../commands/dev/debug');
 const eval = require('./../commands/dev/eval');
 const shibe = require('./../commands/utils/randImg/shibe');
 const gain = require('./../commands/financials/gainers');
+const losers = require('./../commands/financials/losers');
 
 module.exports = {
     price,
@@ -33,5 +34,6 @@ module.exports = {
     debug,
     eval,
     shibe,
-    gain
+    gain,
+    losers
 };
