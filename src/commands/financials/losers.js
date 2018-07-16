@@ -34,7 +34,7 @@ class Lose extends Command {
 
           //input the number of what number of the list, then output the desired string
           function getValue(numList) {
-            return body[numList].companyName + " : " + body[numList].change + "% $" + body[numList].latestPrice;
+            return body[numList].companyName + " : " + body[numList].change + "% $" + body[numList].latestPrice + " ";
           }
 
           msg.channel.send({embed: {color: 16195873,title: "US Equity Losers",
