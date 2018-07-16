@@ -10,7 +10,7 @@ class Lose extends Command {
     constructor() {
         super({
             desc: 'Shows top losers in US Markets',
-            aliases: ['loseer39372h302ejwfw'],
+            aliases: ['loser','losers'],
         });
     }
 
