@@ -26,16 +26,16 @@
 
           const request = require('request');
 
-          //input the number of what number of the list, then output the desired string
-          function getValue(numList) {
-            body[numList].companyName + " : " + body[numList].change + "% $" + body[numList].latestPrice
-          }
-
           //Requesting through IEXTrading API
           request('https://api.iextrading.com/1.0/stock/market/list/gainers', { json: true }, (err, res, body) => {
             if (err) { return console.log(err); }
             console.log(body.url);
             console.log(body.explanation);
+
+            //input the number of what number of the list, then output the desired string
+            function getValue(numList) {
+              body[numList].companyName + " : " + body[numList].change + "% $" + body[numList].latestPrice
+            }
 
             msg.channel.send({embed: {color: 1687175,title: "US Equity Gainers",
             fields: [{
