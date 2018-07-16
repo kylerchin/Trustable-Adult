@@ -34,7 +34,7 @@
 
             //input the number of what number of the list, then output the desired string
             function getValue(numList) {
-              body[numList].companyName + " : " + body[numList].change + "% $" + body[numList].latestPrice
+              return body[numList].companyName + " : " + body[numList].change + "% $" + body[numList].latestPrice;
             }
 
             msg.channel.send({embed: {color: 1687175,title: "US Equity Gainers",
