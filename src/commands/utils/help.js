@@ -131,7 +131,7 @@ class Help extends Command {
             }
 
             msg.channel.send(new RichEmbed({
-                title: 'Butler Command Help',
+                title: 'Chloe Command Help',
                 color: 0x42A5F5,
                 fields,
                 footer: {
