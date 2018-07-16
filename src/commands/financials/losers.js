@@ -40,43 +40,53 @@ class Lose extends Command {
           msg.channel.send({embed: {color: 16195873,title: "US Equity Losers",
           fields: [{
               name: body[0].symbol,
-              value: getValue(0)
+              value: getValue(0),
+              "inline": true
             },
             {
                 name: body[1].symbol,
-                value: getValue(1)
+                value: getValue(1),
+                "inline": true
             },
             {
                 name: body[2].symbol,
-                value: getValue(2)
+                value: getValue(2),
+                "inline": true
             },
             {
                 name: body[3].symbol,
-                value: getValue(3)
+                value: getValue(3),
+                "inline": true
             },
             {
                 name: body[4].symbol,
-                value: getValue(4)
+                value: getValue(4),
+                "inline": true
             },
             {
                 name: body[5].symbol,
-                value: getValue(5)
+                value: getValue(5),
+                "inline": true
             },
             {
                 name: body[6].symbol,
-                value: getValue(6)
+                value: getValue(6),
+                "inline": true
             },
             {
                 name: body[7].symbol,
-                value: getValue(7)
+                value: getValue(7),
+                "inline": true
             },
             {
                 name: body[8].symbol,
-                value: getValue(8)
+                value: getValue(8),
+                "inline": true
             },
             {
                 name: body[9].symbol,
-                value: getValue(9)
+                value: getValue(9),
+                "inline": true
             }
           ],
           footer: {
