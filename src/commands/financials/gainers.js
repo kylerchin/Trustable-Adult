@@ -77,7 +77,7 @@
               {
                   name: body[9].symbol,
                   value: getValue(9)
-              },
+              }
             ],
             footer: {
               text: "Data provided for free by IEX. View IEX’s Terms of Use."
