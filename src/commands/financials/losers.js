@@ -37,7 +37,7 @@ class Lose extends Command {
             return body[numList].companyName + " : " + body[numList].change + "% $" + body[numList].latestPrice;
           }
 
-          msg.channel.send({embed: {color: 1687175,title: "US Equity Losers",
+          msg.channel.send({embed: {color: 16195873,title: "US Equity Losers",
           fields: [{
               name: body[0].symbol,
               value: getValue(0)
