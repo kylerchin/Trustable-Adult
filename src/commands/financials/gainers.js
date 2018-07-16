@@ -10,7 +10,7 @@
       constructor() {
           super({
               desc: 'Shows top gainers in US Markets',
-              aliases: ['gain ','gainer ','gainers '],
+              aliases: ['gain'],
           });
       }
 
