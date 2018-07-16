@@ -36,5 +36,6 @@ module.exports = {
     eval,
     shibe,
     gain,
-    lose
+    lose,
+    active
 };
