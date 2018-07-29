@@ -27,7 +27,7 @@ class Lose extends Command {
         const request = require('request');
 
         //Requesting through IEXTrading API
-        request('https://api.iextrading.com/1.0/stock/market/list/gainers', { json: true }, (err, res, body) => {
+        request('https://api.iextrading.com/1.0/stock/market/list/losers', { json: true }, (err, res, body) => {
           if (err) { return console.log(err); }
           console.log(body.url);
           console.log(body.explanation);
