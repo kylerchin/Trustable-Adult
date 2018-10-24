@@ -9,8 +9,8 @@
        */
       constructor() {
           super({
-              desc: 'Flips a coin. That\'s all.',
-              aliases: ['f'],
+              desc: 'Fetches information from IEX about a listed company',
+              aliases: ['fwru64irhedhthw'],
           });
       }
 
