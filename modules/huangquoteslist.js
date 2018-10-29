@@ -1,10 +1,10 @@
 exports.list = [
   "People who look at me are guilty of lust",
   "Herpes? I already have herpes!",
-  "You should be lucky to get my germs."
-  "It's been a long day, *wink* *wink*."
-  "What do you mean they don't have enough sex?"
-  "You have to rotate it around when you do it."
+  "You should be lucky to get my germs.",
+  "It's been a long day, *wink* *wink*.",
+  "What do you mean they don't have enough sex?",
+  "You have to rotate it around when you do it.",
   "I might get a half inch in and then I'm done. It's just fat from there but I'm still done.",
   "It's not because I'm a wizard, it's because you're a little bit nervous.",
   "New fetish",
@@ -20,7 +20,7 @@ exports.list = [
   "Have you ever run away with a black slave?",
   "You don't like the carrot, how about the whip?",
   "I will whip you as many times as possible to get the message across.",
-  "You suck. Finish them."
+  "You suck. Finish them.",
   "How about I shove it in your mouth and you tell me what it is.",
   "You can borrow neither my hands nor my pants.",
   "It's impossible for me to be emasculated around you.",
