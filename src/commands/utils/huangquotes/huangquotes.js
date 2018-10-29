@@ -26,7 +26,10 @@ class HuangQuotes extends Command {
 
         let text = 'Insert Huang Quote';
 
-        text = quotes[Math.floor(Math.random() * quotes.length)] + " - Mr. Huang";
+        var randomHuangQuotePicker = Math.floor(Math.random() * quotes.length);
+        console.log(randomHuangQuotePicker);
+
+        text = quotes[randomHuangQuotePicker] + " - Mr. Huang";
 
         console.log(text);
 
