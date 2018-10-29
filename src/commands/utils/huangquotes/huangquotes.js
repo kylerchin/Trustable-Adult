@@ -10,7 +10,7 @@ class HuangQuotes extends Command {
     constructor() {
         super({
             desc: 'Gives you a quote from Mr. Huang',
-            aliases: ['huang quotes'],
+            aliases: ['huang'],
         });
     }
 
