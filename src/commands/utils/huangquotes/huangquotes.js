@@ -26,7 +26,9 @@ class HuangQuotes extends Command {
 
         let text = 'Insert Huang Quote';
 
-        text = quotes[Math.floor(Math.random() * quotes.length)];
+        text = quotes[Math.floor(Math.random() * quotes.length)] + " - Mr. Huang";
+
+        console.log(text);
 
         msg.channel.send(prepare(text));
     }
