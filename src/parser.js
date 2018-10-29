@@ -108,13 +108,17 @@ if (lower.includes("kill myself") || lower.includes("hurt someone") || lower.inc
             //If really bad word is true
               console.log(i);
               console.log(swears.list[i]);
-              //remove message from channel
-              msg.delete();
+              //check if swearing is allowed on this server
+              if (0 == 1) {
+                //remove message from channel
+                msg.delete();
+              }
               //fansy dancy msg
               //msg.channel.send("Hey! Your on santa's bad list now!");
               break;
         }
     }
+    //end of swear check
 }
 
 // If the message doesn't start with the prefix then we don't care about it.
