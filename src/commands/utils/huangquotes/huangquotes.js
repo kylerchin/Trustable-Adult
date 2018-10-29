@@ -1,5 +1,5 @@
-const Command = require('./../command');
-const { rand, prepare } = require('./../../helpers');
+const Command = require('./../../command');
+const { rand, prepare } = require('./../../../helpers');
 const quotes = require('./../../../../modules/huangquoteslist.js');
 
 class HuangQuotes extends Command {
