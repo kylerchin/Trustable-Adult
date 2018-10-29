@@ -1,6 +1,6 @@
 const Command = require('./../../command');
 const { rand, prepare } = require('./../../../helpers');
-var quotes = require('./../../../../modules/huangquoteslist.js');
+var quotes = require('./../../../../modules/huangquoteslist');
 
 class HuangQuotes extends Command {
 
