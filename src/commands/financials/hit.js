@@ -15,9 +15,10 @@ const cheerio = require('cheerio');
         });
     }
 
-    function requestSite() {
+    function requestSite(symbolTicker) {
     //Requesting through IEXTrading API
-      request('https://bloomberg.com', (err, res, body) => {
+      var fullViewUrl = 'https://www.tradingview.com/symbols/' + symbolTicker;
+      request(fullViewUrl, (err, res, body) => {
         if (err) { return console.log(err); }
         console.log(body.url);
         console.log(body.explanation);
