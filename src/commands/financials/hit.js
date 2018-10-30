@@ -23,7 +23,8 @@ const cheerio = require('cheerio');
     execute(config) {
         super.execute(config);
 
-        const { msg } = config;
+        const { msg, params } = config;
+        const { sector } = params;
 
         const cheerio = require('cheerio');
         const request = require('request');
@@ -34,6 +35,8 @@ const cheerio = require('cheerio');
           console.log(body.url);
           console.log(body.explanation);
           console.log(body);
+
+          console.log(sector);
     });
   }
 }
