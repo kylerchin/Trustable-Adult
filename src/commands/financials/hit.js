@@ -16,8 +16,11 @@ const cheerio = require('cheerio');
     }
 
     function requestSite(symbolTicker) {
-    //Requesting through IEXTrading API
+
+    //Combine function symbolTicker to get full url to pull
       var fullViewUrl = 'https://www.tradingview.com/symbols/' + symbolTicker;
+
+      //get content from the url
       request(fullViewUrl, (err, res, body) => {
         if (err) { return console.log(err); }
         console.log(body.url);
