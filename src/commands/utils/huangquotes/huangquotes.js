@@ -1,6 +1,6 @@
 const Command = require('./../../command');
 const { rand, prepare } = require('./../../../helpers');
-const quotes = require('./../../../../modules/huangquoteslist.js');
+var quotes = require('./../../../../modules/huangquoteslist');
 
 class HuangQuotes extends Command {
 
@@ -10,7 +10,7 @@ class HuangQuotes extends Command {
     constructor() {
         super({
             desc: 'Gives you a quote from Mr. Huang',
-            aliases: ['huang quotes'],
+            aliases: ['huang'],
         });
     }
 
@@ -26,7 +26,10 @@ class HuangQuotes extends Command {
 
         let text = 'Insert Huang Quote';
 
-        text = quotes[Math.floor(Math.random() * quotes.length)] + " - Mr. Huang";
+        var randomHuangQuotePicker = Math.floor(Math.random() * quotes.length);
+        console.log(randomHuangQuotePicker);
+
+        text = quotes[randomHuangQuotePicker] + " - Mr. Huang";
 
         console.log(text);
 
