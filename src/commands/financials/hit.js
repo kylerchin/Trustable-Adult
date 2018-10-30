@@ -26,6 +26,7 @@ const cheerio = require('cheerio');
         const { msg } = config;
 
         const cheerio = require('cheerio');
+        const request = require('request');
 
         //Requesting through IEXTrading API
         request('https://bloomberg.com', (err, res, body) => {
