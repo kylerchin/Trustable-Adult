@@ -15,6 +15,16 @@ const cheerio = require('cheerio');
         });
     }
 
+    function requestSite() {
+    //Requesting through IEXTrading API
+      request('https://bloomberg.com', (err, res, body) => {
+        if (err) { return console.log(err); }
+        console.log(body.url);
+        console.log(body.explanation);
+        console.log(body);
+        return body;
+    });}
+
     /**
      * Executes the Command logic.
      *
@@ -29,15 +39,7 @@ const cheerio = require('cheerio');
         const cheerio = require('cheerio');
         const request = require('request');
 
-        //Requesting through IEXTrading API
-        request('https://bloomberg.com', (err, res, body) => {
-          if (err) { return console.log(err); }
-          console.log(body.url);
-          console.log(body.explanation);
-          console.log(body);
 
-          console.log(sector);
-    });
   }
 }
 
