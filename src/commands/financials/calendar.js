@@ -10,8 +10,8 @@ const cheerio = require('cheerio');
      */
     constructor() {
         super({
-            desc: 'Show top market indexes currently',
-            aliases: ['hit','HIT'],
+            desc: 'Show Economic Calendar',
+            aliases: ['cal'],
         });
     }
 
