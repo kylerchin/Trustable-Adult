@@ -10,7 +10,7 @@ const dice = require('./../commands/utils/dice');
 const ping = require('./../commands/utils/ping');
 const info = require('./../commands/utils/info');
 const help = require('./../commands/utils/help');
-//const huangquotes = require('./../commands/utils/huangquotes/huangquotes');
+const huangquotes = require('./../commands/utils/huangquotes/huangquotes');
 const quote = require('./../commands/utils/quote');
 const debug = require('./../commands/dev/debug');
 const eval = require('./../commands/dev/eval');
@@ -39,6 +39,5 @@ module.exports = {
     shibe,
     gain,
     lose,
-    active,
-    hit
+    active
 };

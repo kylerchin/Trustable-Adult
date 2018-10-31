@@ -1,8 +1,8 @@
 export.list = {
   "all": [
       {"ticker":"CME-SP1!", "name":"S&P 500 Futures", "id": "1"},
-      {"ticker":"CME-SP1!", "name":"Dow Jones Futures", "id": "2"},
-      {"ticker":"CME-SP1!", "name":"S&P 500 Futures", "id": "1"},
+      {"ticker":"CBOT_MINI-YM1!", "name":"Dow Jones Futures", "id": "2"},
+      {"ticker":"TVC-SX5E", "name":"Euro Stoxx 50 Pr", "id": "3"},
       {"ticker":"CME-SP1!", "name":"S&P 500 Futures", "id": "1"},
       {"ticker":"CME-SP1!", "name":"S&P 500 Futures", "id": "1"},
       {"ticker":"CME-SP1!", "name":"S&P 500 Futures", "id": "1"},
