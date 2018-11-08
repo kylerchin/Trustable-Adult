@@ -24,8 +24,8 @@ class Hit extends Command {
 
         const { msg, hitInput2, hitInput3 } = config;
 
-        console.log(hitInput2);
-        console.log(hitInput3);
+        console.log(JSON.stringify(hitInput2));
+        console.log(JSON.stringify(hitInput3));
         msg.channel.send("hit executed");
     }
 
