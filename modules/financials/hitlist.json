@@ -4,10 +4,20 @@
      "enabled": false,
      "1": {"Name":"Dow Jones Mini","TradingView":"CBOT_MINI-YM1!", "Bloomberg":"DM1:IND"},
      "2": {"Name":"S&P 500 Mini","TradingView":"CME-SP1!", "Bloomberg":"ES1:IND"},
-     "3": {"Name":"FTSE 100 Future","TradingView":"", "Bloomberg":"Z%201:IND"},
-     "4": {"Name":"Nikkei","TradingView":"", "Bloomberg":"NKY:IND"},
-     "5": {"Name":"EUR-USD","TradingView":"", "Bloomberg":"EURUSD:CUR"},
-     "6": {"Name":"WTI Crude","TradingView":"", "Bloomberg":"CL1:COM"}
+     "3": {"Name":"FTSE 100 Future","TradingView":"CME-FTU1!", "Bloomberg":"Z%201:IND"},
+     "4": {"Name":"Nikkei","TradingView":"TVC-NI225", "Bloomberg":"NKY:IND"},
+     "5": {"Name":"EUR-USD","TradingView":"EURUSD", "Bloomberg":"EURUSD:CUR"},
+     "6": {"Name":"WTI Crude","TradingView":"USOIL", "Bloomberg":"CL1:COM"}
+  },
+  "overview-front-2": {
+     "demo": {"Name":"","TradingView":"", "Bloomberg":""},
+     "enabled": false,
+     "1": {"Name":"Dow Jones Mini","TradingView":"CBOT_MINI-YM1!", "Bloomberg":"DM1:IND"},
+     "2": {"Name":"S&P 500 Mini","TradingView":"CME-SP1!", "Bloomberg":"ES1:IND"},
+     "3": {"Name":"FTSE 100","TradingView":"TVC-UKX", "Bloomberg":"Z%201:IND"},
+     "4": {"Name":"Nikkei 225 Future","TradingView":"CME-NY1!", "Bloomberg":"NK1:IND"},
+     "5": {"Name":"EUR-USD","TradingView":"EURUSD", "Bloomberg":"EURUSD:CUR"},
+     "6": {"Name":"WTI Crude","TradingView":"USOIL", "Bloomberg":"CL1:COM"}
   },
   "overview-futures": {
      "demo": {"Name":"","TradingView":"", "Bloomberg":""},
@@ -22,13 +32,25 @@
   },
   "overview-americas": {
      "demo": {"Name":"","TradingView":"", "Bloomberg":""},
+     "arg": ["us","u","usa","a","am","ame","amer","ameri","americ","america","americas"],
+     "enabled": true,
+     "1": {"Name":"DJIA","TradingView":"TVC:​DJI", "Bloomberg":"INDU:IND"},
+     "2": {"Name":"S&P 500","TradingView":"SPX", "Bloomberg":"SPX:IND"},
+     "3": {"Name":"NASDAQ","TradingView":"TVC:​IXIC", "Bloomberg":"CCMP:IND"},
+     "4": {"Name":"S&P/TSX","TradingView":"TSX:​TSX", "Bloomberg":"SPTSX:IND"},
+     "5": {"Name":"Mex IPC","TradingView":"BMV:​ME", "Bloomberg":"MEXBOL:IND"},
+     "6": {"Name":"Ibovespa","TradingView":"BMFBOVESPA:​IBOV", "Bloomberg":"IBOV:IND"}
+  },
+  "overview-asia-pacific": {
+     "demo": {"Name":"","TradingView":"", "Bloomberg":""},
+     "arg": ["asia","china","korea","hong kong","japan","as","asi"],
      "enabled": false,
-     "1": {"Name":"DJIA","TradingView":"CBOT_MINI-YM1!", "Bloomberg":"INDU:IND"},
-     "2": {"Name":"S&P 500","TradingView":"CME-SP1!", "Bloomberg":"SPX:IND"},
-     "3": {"Name":"NASDAQ","TradingView":"EUREX-FESX1!", "Bloomberg":"CCMP:IND"},
-     "4": {"Name":"S&P/TSX","TradingView":"CME-FTU1!", "Bloomberg":"SPTSX:IND"},
-     "5": {"Name":"Mex IPC","TradingView":"CME-NY1!", "Bloomberg":"MEXBOL:IND"},
-     "6": {"Name":"Ibovespa","TradingView":"HKEX-HSI1!", "Bloomberg":"IBOV:IND"}
+     "1": {"Name":"DJIA","TradingView":"TVC:​DJI", "Bloomberg":"INDU:IND"},
+     "2": {"Name":"S&P 500","TradingView":"SPX", "Bloomberg":"SPX:IND"},
+     "3": {"Name":"NASDAQ","TradingView":"TVC:​IXIC", "Bloomberg":"CCMP:IND"},
+     "4": {"Name":"S&P/TSX","TradingView":"TSX:​TSX", "Bloomberg":"SPTSX:IND"},
+     "5": {"Name":"Mex IPC","TradingView":"BMV:​ME", "Bloomberg":"MEXBOL:IND"},
+     "6": {"Name":"Ibovespa","TradingView":"BMFBOVESPA:​IBOV", "Bloomberg":"IBOV:IND"}
   },
   "overview-crypto": {
      "arg": ["c","crypto","cryptocurrencies","cryptocurrency"],

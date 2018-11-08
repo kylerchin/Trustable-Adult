@@ -46,7 +46,6 @@ class Hit extends Command {
         if (params.market !== null) {
 
         } else {
-
         }
     }
 
