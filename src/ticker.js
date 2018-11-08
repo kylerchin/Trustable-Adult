@@ -87,6 +87,11 @@ class Ticker {
                     sort: 'id',
                     convert: 'BTC',
                 }).then(page => {
+                    if (page === undefined || page === null) {
+                        this.updating = false;
+                        return;
+                    }
+
                     const ids = Object.keys(page);
                     const total = ids.length;
                     count += total;
