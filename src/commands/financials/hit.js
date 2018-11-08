@@ -22,9 +22,10 @@ class Hit extends Command {
     execute(config) {
         super.execute(config);
 
-        const { msg } = config;
+        const { msg, params, is } = config;
 
-        msg.channel.send("Hit command executed");
+        console.log(params);
+        msg.channel.send("hit executed");
     }
 
 }
