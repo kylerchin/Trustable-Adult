@@ -5,7 +5,6 @@ const { prefix: getPrefix } = require('./servers');
 const { prepare } = require('./helpers');
 const swears = require('./../modules/swears/swears.js');
 const pickupline = require('./../modules/pickupline.js');
-var request = require("request");
 
 // Initial stores for all Commands.
 const supported = Object.keys(commands);
