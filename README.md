@@ -5,6 +5,8 @@ Chloe Discord Bot
 
 A multipurpose helpful bot with human interaction, top news, quotes, stock / crypto prices and charts, polls built by Logic0x Labs, LLC.
 
+THIS WAS ORIGINALLY FORKED FROM BUTLER: https://github.com/oyed/butler/
+
 To activate this bot, mention it or use !c . The prefix can be changed via the .env file.
 
 Chloe is a Discord bot by Weijing Wang and Kyler Chin.
