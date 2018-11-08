@@ -9,7 +9,7 @@ class Hit extends Command {
      */
     constructor() {
         super({
-            desc: 'Show brief info about top global tickers and indices',
+            desc: 'Show brief info about top global tickers and indices Optional arguments: [futures,crypto,americas,asia,europe,commodities]',
             aliases: ['hit'],
         });
     }
