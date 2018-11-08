@@ -12,6 +12,7 @@ const fetch = (id, conversion = 'BTC') => new Promise((resolve, reject) => {
 
         if (data.data === null) {
             reject();
+            console.log("data.data === null reject error")
         }
 
         resolve(data.data);
