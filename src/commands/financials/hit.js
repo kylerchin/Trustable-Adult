@@ -11,6 +11,10 @@ class Hit extends Command {
         super({
             desc: 'Show brief info about top global tickers and indices Optional arguments: [futures,crypto,americas,asia,europe,commodities]',
             aliases: ['hit'],
+            params: {
+                market: {
+                    default: null,
+                }
         });
     }
 
