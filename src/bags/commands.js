@@ -21,24 +21,4 @@ const active = require('./../commands/financials/mostactive');
 const hit = require('./../commands/financials/hit');
 
 module.exports = {
-    price,
-    convert,
-    balance,
-    top,
-    poll,
-    prefix,
-    stats,
-    flip,
-    dice,
-    ping,
-    info,
-    help,
-    quote,
-    debug,
-    eval,
-    shibe,
-    gain,
-    lose,
-    active,
-    hit
 };
