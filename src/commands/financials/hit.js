@@ -9,8 +9,8 @@ class Hit extends Command {
      */
     constructor() {
         super({
-            desc: 'Show brief info about top global tickers',
-            aliases: ['h'],
+            desc: 'Show brief info about top global tickers and indices',
+            aliases: ['hit'],
         });
     }
 
