@@ -18,6 +18,7 @@ const shibe = require('./../commands/utils/randImg/shibe');
 const gain = require('./../commands/financials/gainers');
 const lose = require('./../commands/financials/losers');
 const active = require('./../commands/financials/mostactive');
+const active = require('./../commands/financials/hit');
 
 module.exports = {
     price,
@@ -39,5 +40,6 @@ module.exports = {
     gain,
     lose,
     active,
-    huangquotes
+    huangquotes,
+    hit
 };

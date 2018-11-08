@@ -1,0 +1,44 @@
+{
+  "overview-front-1": {
+     "demo": {"Name":"","TradingView":"", "Bloomberg":""},
+     "enabled": false,
+     "1": {"Name":"Dow Jones Mini","TradingView":"CBOT_MINI-YM1!", "Bloomberg":"DM1:IND"},
+     "2": {"Name":"S&P 500 Mini","TradingView":"CME-SP1!", "Bloomberg":"ES1:IND"},
+     "3": {"Name":"FTSE 100 Future","TradingView":"", "Bloomberg":"Z%201:IND"},
+     "4": {"Name":"Nikkei","TradingView":"", "Bloomberg":"NKY:IND"},
+     "5": {"Name":"EUR-USD","TradingView":"", "Bloomberg":"EURUSD:CUR"},
+     "6": {"Name":"WTI Crude","TradingView":"", "Bloomberg":"CL1:COM"}
+  },
+  "overview-futures": {
+     "demo": {"Name":"","TradingView":"", "Bloomberg":""},
+     "arg": ["f","future","fut","futures","futu","futur"],
+     "enabled": true,
+     "1": {"Name":"Dow Jones mini","TradingView":"CBOT_MINI-YM1!", "Bloomberg":"DM1:IND"},
+     "2": {"Name":"S&P 500 Mini","TradingView":"CME-SP1!", "Bloomberg":"ES1:IND"},
+     "3": {"Name":"Euro STOXX 50 Future","TradingView":"EUREX-FESX1!", "Bloomberg":"VG1:IND"},
+     "4": {"Name":"FTSE 100 Future","TradingView":"CME-FTU1!", "Bloomberg":"Z%201:IND"},
+     "5": {"Name":"Nikkei 225 Future","TradingView":"CME-NY1!", "Bloomberg":"NK1:IND"},
+     "6": {"Name":"Hang Seng Future","TradingView":"HKEX-HSI1!", "Bloomberg":"HI1:IND"}
+  },
+  "overview-americas": {
+     "demo": {"Name":"","TradingView":"", "Bloomberg":""},
+     "enabled": false,
+     "1": {"Name":"DJIA","TradingView":"CBOT_MINI-YM1!", "Bloomberg":"INDU:IND"},
+     "2": {"Name":"S&P 500","TradingView":"CME-SP1!", "Bloomberg":"SPX:IND"},
+     "3": {"Name":"NASDAQ","TradingView":"EUREX-FESX1!", "Bloomberg":"CCMP:IND"},
+     "4": {"Name":"S&P/TSX","TradingView":"CME-FTU1!", "Bloomberg":"SPTSX:IND"},
+     "5": {"Name":"Mex IPC","TradingView":"CME-NY1!", "Bloomberg":"MEXBOL:IND"},
+     "6": {"Name":"Ibovespa","TradingView":"HKEX-HSI1!", "Bloomberg":"IBOV:IND"}
+  },
+  "overview-crypto": {
+     "arg": ["c","crypto","cryptocurrencies","cryptocurrency"],
+     "enabled": true,
+     "demo": {"Name":"","TradingView":"", "Bloomberg":""},
+     "1": {"Name":"BTC/USD","TradingView":"BTCUSD", "Bloomberg":""},
+     "2": {"Name":"BCH/USD","TradingView":"BCHUSD", "Bloomberg":""},
+     "3": {"Name":"LTC/USD","TradingView":"LTCUSD", "Bloomberg":""},
+     "4": {"Name":"ETH/USD","TradingView":"ETHUSD", "Bloomberg":""},
+     "5": {"Name":"XRP/USD","TradingView":"XRPUSD", "Bloomberg":""},
+     "6": {"Name":"ETC/USD","TradingView":"ETCUSD", "Bloomberg":""}
+  }
+}
