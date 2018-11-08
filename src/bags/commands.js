@@ -40,6 +40,5 @@ module.exports = {
     gain,
     lose,
     active,
-    huangquotes,
     hit
 };
