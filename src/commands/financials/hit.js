@@ -1,6 +1,8 @@
 const Command = require('./../command');
 const { rand, prepare } = require('./../../helpers');
 const request = require('request');
+var hitlist = require('./../../../modules/financials/hitlist.json');
+var cheerio = require("cheerio");
 
 class Hit extends Command {
 
@@ -18,6 +20,15 @@ class Hit extends Command {
         });
     }
 
+    function getTicker(tradingViewTicker) {
+      request({
+        uri: "https://www.tradingview.com/symbols/" + tradingViewTicker,
+      }, function(error, response, body) {
+        console.log(body);
+        var cheerioTradingView = cheerio.load(body);
+      });
+    }
+
     /**
      * Executes the Command logic.
      *
@@ -31,6 +42,12 @@ class Hit extends Command {
         console.log(JSON.stringify(hitInput2));
         console.log(JSON.stringify(hitInput3));
         msg.channel.send("hit executed");
+
+        if (params.market !== null) {
+
+        } else {
+
+        }
     }
 
 }
