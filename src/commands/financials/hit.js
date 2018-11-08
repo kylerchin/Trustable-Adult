@@ -24,9 +24,7 @@ class Hit extends Command {
 
         const { msg } = config;
 
-        const request = require('request');
-
-        console.log("Hit command executed.")
+        msg.channel.send("Hit command executed");
     }
 
 }
