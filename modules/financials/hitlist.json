@@ -45,12 +45,12 @@
      "demo": {"Name":"","TradingView":"", "Bloomberg":""},
      "arg": ["asia","china","korea","hong kong","japan","as","asi"],
      "enabled": false,
-     "1": {"Name":"Nikkei","TradingView":"TVC:​DJI", "Bloomberg":"NKY:IND"},
-     "2": {"Name":"TOPIX","TradingView":"SPX", "Bloomberg":"TPX:IND"},
-     "3": {"Name":"Hang Seng","TradingView":"TVC:​IXIC", "Bloomberg":"HSI:IND"},
-     "4": {"Name":"CSI 300","TradingView":"TSX:​TSX", "Bloomberg":"SHSZ300:IND"},
-     "5": {"Name":"KOSPI","TradingView":"BMV:​ME", "Bloomberg":"KOSPI:IND"},
-     "6": {"Name":"S&P/ASX 200","TradingView":"BMFBOVESPA:​IBOV", "Bloomberg":"AS51:IND"}
+     "1": {"Name":"Nikkei","TradingView":"", "Bloomberg":"NKY:IND"},
+     "2": {"Name":"TOPIX","TradingView":"", "Bloomberg":"TPX:IND"},
+     "3": {"Name":"Hang Seng","TradingView":"", "Bloomberg":"HSI:IND"},
+     "4": {"Name":"CSI 300","TradingView":"", "Bloomberg":"SHSZ300:IND"},
+     "5": {"Name":"KOSPI","TradingView":"", "Bloomberg":"KOSPI:IND"},
+     "6": {"Name":"S&P/ASX 200","TradingView":"", "Bloomberg":"AS51:IND"}
   },
   "overview-crypto": {
      "arg": ["c","crypto","cryptocurrencies","cryptocurrency"],
