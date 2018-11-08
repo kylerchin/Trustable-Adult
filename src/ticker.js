@@ -209,6 +209,12 @@ class Ticker {
 
                     resolve();
                 });
+            }).catch(err => {
+                this.fetching = false;
+
+                console.log(`Could not fetch listings from CMC: ${err}`);
+
+                reject();
             });
         });
     }

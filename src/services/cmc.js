@@ -11,8 +11,7 @@ const fetch = (id, conversion = 'BTC') => new Promise((resolve, reject) => {
         const data = JSON.parse(body);
 
         if (data.data === null) {
-            reject();
-            console.log("data.data === null reject error")
+            reject(err);
         }
 
         resolve(data.data);
@@ -39,7 +38,7 @@ const ticker = options => new Promise((resolve, reject) => {
         if (typeof data.data === 'object') {
             resolve(data.data);
         } else {
-            reject();
+            reject(err);
         }
     });
 });
@@ -47,15 +46,19 @@ const ticker = options => new Promise((resolve, reject) => {
 const listings = () => new Promise((resolve, reject) => {
     request(`${base}listings`, (err, response, body) => {
         if (err) {
-            reject();
+            reject(err);
         }
 
-        const data = JSON.parse(body);
+        try {
+            const data = JSON.parse(body);
 
-        if (Array.isArray(data.data)) {
-            resolve(data.data);
-        } else {
-            reject();
+            if (Array.isArray(data.data)) {
+                resolve(data.data);
+            } else {
+                reject('Invalid body');
+            }
+        } catch (e) {
+            reject(e);
         }
     });
 });
